@@ -11,7 +11,7 @@ namespace Biblioteca
 {
 
 
-    public partial class Usuarios
+    public partial class Livros
     {
 
         /// <summary>
@@ -33,6 +33,42 @@ namespace Biblioteca
         protected global::System.Web.UI.WebControls.TextBox nomeFiltro;
 
         /// <summary>
+        /// Controle lblAutor.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAutor;
+
+        /// <summary>
+        /// Controle autorFiltro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox autorFiltro;
+
+        /// <summary>
+        /// Controle lblGenero.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblGenero;
+
+        /// <summary>
+        /// Controle generoFiltro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox generoFiltro;
+
+        /// <summary>
         /// Controle btnFiltro.
         /// </summary>
         /// <remarks>
@@ -51,12 +87,12 @@ namespace Biblioteca
         protected global::System.Web.UI.WebControls.Label lblInput;
 
         /// <summary>
-        /// Controle gridUsuarios.
+        /// Controle gridLivros.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridUsuarios;
+        protected global::System.Web.UI.WebControls.GridView gridLivros;
     }
 }
