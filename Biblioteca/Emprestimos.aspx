@@ -7,5 +7,13 @@
         <asp:TextBox ID="isbnInput" runat="server"></asp:TextBox><br />
         <asp:Button ID="btnEmprestar" runat="server" Text="Emprestar"/><br />
     </div>
-        <asp:Label ID="lblAviso" runat="server" Text="" Visible="False"></asp:Label>
+        <asp:Label ID="lblAviso" runat="server" Text="" Visible="false" onClick="Ocultar()"></asp:Label>
+
+    <script type="text/javascript">
+      function Ocultar()
+      {
+          javascript: document.getElementById('MainContent_lblAviso').hidden = true;
+      }    
+    </script>
+
 </asp:Content>
