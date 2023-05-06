@@ -114,6 +114,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Devolucao.aspx" />
+    <Content Include="Emprestimos.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -208,6 +209,13 @@
     </Compile>
     <Compile Include="Devolucao.aspx.designer.cs">
       <DependentUpon>Devolucao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Emprestimos.aspx.cs">
+      <DependentUpon>Emprestimos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emprestimos.aspx.designer.cs">
+      <DependentUpon>Emprestimos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
