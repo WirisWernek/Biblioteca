@@ -55,6 +55,7 @@
                         <li><a runat="server" href="~/Usuarios">Usuarios</a></li>
                         <li><a runat="server" href="~/Livros">Livros</a></li>
                         <li><a runat="server" href="~/Devolucao">Devolver</a></li>
+                        <li><a runat="server" href="~/Emprestimos">Pegar Emprestado</a></li>
                     </ul>
                 </div>
             </div>
