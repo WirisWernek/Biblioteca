@@ -13,5 +13,26 @@ namespace Biblioteca
         {
 
         }
+
+        protected void btnEmprestar_Click(object sender, EventArgs e)
+        {
+            BibliotecaDSTableAdapters.buscaEmprestimoTableAdapter ta3 = new BibliotecaDSTableAdapters.buscaEmprestimoTableAdapter();
+            int? resp = 0;
+            ta3.insereEmprestimo(isbnInput.Text, dpiInput.Text, ref resp);
+
+            string mensagemRetorno = "I";
+
+
+            if (resp == 0) { mensagemRetorno = "EMPRESTIMO EFETUADO COM SUCESSO"; }
+
+            if (resp == 1) { mensagemRetorno = "Erro: Usuário não existe"; }
+
+            if (resp == 2) { mensagemRetorno = "Erro: Livro não existe"; }
+
+            if (resp == 3) { mensagemRetorno = "Erro: Livro já está emprestado"; }
+
+            lblAviso.Text = mensagemRetorno;
+            lblAviso.Visible = true;
+        }
     }
 }

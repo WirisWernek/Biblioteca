@@ -78,6 +78,51 @@ namespace Biblioteca
         protected global::System.Web.UI.WebControls.GridView gridDevolucoes;
 
         /// <summary>
+        /// Controle lblDpi.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDpi;
+
+        /// <summary>
+        /// Controle dpiInput.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox dpiInput;
+
+        /// <summary>
+        /// Controle lblIsbn.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIsbn;
+
+        /// <summary>
+        /// Controle isbnInput.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox isbnInput;
+
+        /// <summary>
+        /// Controle btnDevolver.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDevolver;
+
+        /// <summary>
         /// Controle lblDevolvido.
         /// </summary>
         /// <remarks>

@@ -5,7 +5,7 @@
 		<asp:TextBox ID="dpiInput" runat="server"></asp:TextBox><br/>
         <asp:Label ID="lblIsbn" runat="server" Text="ISBN do Livro"></asp:Label>
         <asp:TextBox ID="isbnInput" runat="server"></asp:TextBox><br />
-        <asp:Button ID="btnEmprestar" runat="server" OnClientClick="return Validate()" Text="Emprestar"/><br />
+        <asp:Button ID="btnEmprestar" runat="server" OnClientClick="return Validate()" Text="Emprestar" OnClick="btnEmprestar_Click"/><br />
     </div>
         <asp:Label ID="lblAviso" runat="server" Text="" Visible="false" onClick="Ocultar()"></asp:Label>
 
