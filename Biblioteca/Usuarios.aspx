@@ -7,8 +7,10 @@
         <asp:Label ID="lblNome" class="label" runat="server" Text="Nome do Usuario: "></asp:Label>
         <asp:TextBox ID="nomeFiltro" class="form-control" runat="server" placeholder="Usuário"></asp:TextBox>
         <br />
-        <asp:Button ID="btnFiltro" class="btn btn-primary" runat="server" Text="Filtrar" OnClick="btnFiltro_Click" /><br />
-        <asp:Label ID="lblInput" runat="server" Text="** Para uma busca completa deixe o campo em branco" Font-Bold="True" ForeColor="#CC0000"></asp:Label>
+        <asp:Label ID="lblInput" runat="server" Text="** Para uma busca completa deixe o campo em branco" Font-Bold="True" ForeColor="#CC0000" Font-Size="15px"></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="btnFiltro" class="btn btn-primary" runat="server" Text="Buscar" OnClick="btnFiltro_Click" />
     </div>
     <br />
     <asp:GridView ID="gridUsuarios" class="table table-striped table-bordered" runat="server"></asp:GridView>

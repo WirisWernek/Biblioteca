@@ -74,7 +74,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer class="footer">
-                <p>&copy; <%: DateTime.Now.Year %> - Trabalho de TII. Desenvolvido por Jhennifer, Maria Carolina e Wiris.</p>
+                <p>&copy; TADS <%: DateTime.Now.Year %> - Trabalho de TII. Desenvolvido por Jhennifer, Maria Carolina e Wiris.</p>
             </footer>
         </div>
 
