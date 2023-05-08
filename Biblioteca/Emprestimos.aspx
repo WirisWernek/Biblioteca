@@ -1,21 +1,23 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Emprestimos.aspx.cs" Inherits="Biblioteca.Emprestimos" %>
+﻿<%@ Page Title="Empréstimo" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Emprestimos.aspx.cs" Inherits="Biblioteca.Emprestimos" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <asp:Label ID="lblDpi" runat="server" Text="DPI do Usuario"></asp:Label>            
-		<asp:TextBox ID="dpiInput" runat="server"></asp:TextBox><br/>
-        <asp:Label ID="lblIsbn" runat="server" Text="ISBN do Livro"></asp:Label>
-        <asp:TextBox ID="isbnInput" runat="server"></asp:TextBox><br />
-        <asp:Button ID="btnEmprestar" runat="server" OnClientClick="return Validate()" Text="Emprestar"/><br />
+        <br />
+        <asp:Label ID="lblDpi" class="label" runat="server" Text="DPI do Usuario"></asp:Label>
+        <asp:TextBox ID="dpiInput" class="form-control" runat="server"></asp:TextBox><br />
+        <asp:Label ID="lblIsbn" class="label" runat="server" Text="ISBN do Livro"></asp:Label>
+        <asp:TextBox ID="isbnInput" class="form-control" runat="server"></asp:TextBox><br />
+        <asp:Button ID="btnEmprestar" class="btn btn-primary espacamento" runat="server" OnClientClick="return Validate()" Text="Emprestar" /><br />
     </div>
-        <asp:Label ID="lblAviso" runat="server" Text="" Visible="false" onClick="Ocultar()"></asp:Label>
+
+    <asp:Label ID="lblAviso" runat="server" ForeColor="#CC0000" Font-Size="24px" Text="" Visible="false" onClick="Ocultar()"></asp:Label>
 
     <script type="text/javascript">
-        function Ocultar()
-        {
-          javascript: document.getElementById('MainContent_lblAviso').hidden = true;
+        function Ocultar() {
+            javascript: document.getElementById('MainContent_lblAviso').hidden = true;
         }
 
-        function Validate() {  
+        function Validate() {
             if (document.getElementById("MainContent_dpiInput").value.trim() == "") {
                 alert("Informe o DPI.");
                 document.getElementById("MainContent_dpiInput").focus();

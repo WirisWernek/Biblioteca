@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Biblioteca._Default" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Biblioteca._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -9,12 +9,12 @@
         }
     </style>
 
-    <div class="jumbotron">
+    <div class="quadro">
         <h1>Seja bem-vindo(a)!</h1>
 
-        <p>
+        <p >
             Em nossa biblioteca você pode pesquisar por livros, autores,
-            e muito mais! <br />Venha conhecer!
+            e muito mais! Venha conhecer!
         </p>
     </div>
         
