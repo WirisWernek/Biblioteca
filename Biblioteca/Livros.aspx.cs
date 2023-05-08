@@ -13,5 +13,13 @@ namespace Biblioteca
         {
 
         }
+
+        protected void btnFiltro_Click(object sender, EventArgs e)
+        {
+            BibliotecaDSTableAdapters.buscaLivroTableAdapter taLivros = new BibliotecaDSTableAdapters.buscaLivroTableAdapter();
+            BibliotecaDS.buscaLivroDataTable dtLivros = taLivros.GetData(nomeFiltro.Text, autorFiltro.Text, generoFiltro.Text);
+            gridLivros.DataSource = dtLivros;
+            gridLivros.DataBind();
+        }
     }
 }

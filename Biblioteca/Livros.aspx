@@ -7,7 +7,7 @@
             <asp:TextBox ID="autorFiltro" runat="server"></asp:TextBox><br />
             <asp:Label ID="lblGenero" runat="server" Text="Genero do Livro"></asp:Label>
             <asp:TextBox ID="generoFiltro" runat="server"></asp:TextBox><br />
-            <asp:Button ID="btnFiltro" runat="server" Text="Filtrar" /><br />
+            <asp:Button ID="btnFiltro" runat="server" Text="Filtrar" OnClick="btnFiltro_Click"/><br />
             <asp:Label ID="lblInput" runat="server" Text="**Para uma busca completa deixe os campo em branco"></asp:Label>
         </div>
         <asp:GridView ID="gridLivros" runat="server"></asp:GridView>
