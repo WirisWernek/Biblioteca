@@ -69,13 +69,13 @@ namespace Biblioteca
         protected global::System.Web.UI.WebControls.TextBox generoFiltro;
 
         /// <summary>
-        /// Controle btnFiltro.
+        /// Controle btnBuscar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltro;
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
 
         /// <summary>
         /// Controle lblInput.

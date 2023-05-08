@@ -4,20 +4,22 @@
 
 <html lang="pt">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Meu aplicativo ASP.NET</title>
+    <title><%: Page.Title %> - Trabalho de TII</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <link href="css/estilos.css" rel="stylesheet" />
+    <%--  --%>
 </head>
-<body>
+<body class="bg-success p-2 text-dark bg-opacity-10">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -50,25 +52,40 @@
                     <a class="navbar-brand" runat="server" href="~/">Biblioteca</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/Usuarios">Usuarios</a></li>
-                        <li><a runat="server" href="~/Livros">Livros</a></li>
-                        <li><a runat="server" href="~/Devolucao">Devolver</a></li>
-                        <li><a runat="server" href="~/Emprestimos">Pegar Emprestado</a></li>
+                    <ul class="nav navbar-nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Usuarios">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Livros">Livros</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Devolucao">Devolver</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Emprestimos">Pegar Emprestado </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        <div class="container body-content " >
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" > 
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Meu aplicativo ASP.NET</p>
+            <footer class="footer">
+                <p>&copy; <%: DateTime.Now.Year %> - Trabalho de TII. Desenvolvido por Jhennifer, Maria Carolina e Wiris.</p>
             </footer>
         </div>
 
     </form>
+
+    <%--   --%>
 </body>
 </html>
