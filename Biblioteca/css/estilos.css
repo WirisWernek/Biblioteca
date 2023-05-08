@@ -1,3 +1,29 @@
 ﻿body {
 }
 
+.label {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cadetblue;
+}
+
+.footer {
+    color: black;
+    font-size: 15px;
+    opacity: 80%;
+}
+
+.quadro {
+    padding: 30px;
+    margin: 30px;
+    background-color: beige;
+    opacity: 80%;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.menu {
+    color: black;
+    background-color: cadetblue;
+    font-weight: bolder;
+}
